@@ -1,0 +1,31 @@
+body.ng-scope {
+    margin: 0;
+}
+header {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+    display: grid;
+    padding: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #1996CA;
+}
+nav {
+    width: 20%;
+    float: left;
+}
+.main-container.ng-scope {
+    overflow: auto;
+}
+li {
+    margin-bottom: 7px;
+}
