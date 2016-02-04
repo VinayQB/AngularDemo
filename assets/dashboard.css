@@ -20,12 +20,68 @@ nav ul li a {
     color: #1996CA;
 }
 nav {
-    width: 20%;
+    width: 12%;
     float: left;
+    margin-right: 15px;
 }
 .main-container.ng-scope {
     overflow: auto;
+    border-left: 2px solid black;
+    padding-left: 15px;
+        height: 628px;
+
 }
 li {
     margin-bottom: 7px;
+}
+table, th, td { 
+    border: 1px solid #AAA;
+    border-collapse: collapse;
+ }
+th {
+    cursor: pointer ;
+    height: 30px;
+}
+table{
+      width: 80%;
+  text-align: center;
+  margin: auto;
+}
+th:nth-child(1),th:nth-child(5) {  
+  width: 15%;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+tr:nth-child(odd) {
+   background-color:#fff;
+}
+th  {
+    background-color: black;
+    color: white;
+}
+header{
+    background-color: black;
+  color: white;
+  /* height: 63px; */
+  padding: 15px;
+}
+.list_data h1{
+    text-align: center;
+}
+.list_data{
+        margin-top: 60px;
+      padding-bottom: 80px;
+}
+.add_data{
+    text-align: center;
+}
+#tax{
+    padding-right: 16px;
+}
+.field{
+    padding: 5px;
+}
+#undo{
+    margin-left: 10%;
 }
