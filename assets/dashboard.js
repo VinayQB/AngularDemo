@@ -2,6 +2,10 @@ var mainApp = angular.module("mainApp", ['ngRoute']);
 mainApp.config(['$routeProvider', function($routeProvider) {
    $routeProvider.
    
+   when('/dashboard', {
+      templateUrl: 'dashboardView.html',
+      controller: 'dashboardController'
+   }).
    when('/employeeDetails', {
       templateUrl: 'employeeDetails.html',
       controller: 'employeeDetailsController'
@@ -11,9 +15,8 @@ mainApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: 'statusUpdate.html',
       controller: 'statusUpdateController'
    }).
-   
    otherwise({
-      redirectTo: '/employeeDetails'
+      redirectTo: '/dashboard'
    });
 }]);
 

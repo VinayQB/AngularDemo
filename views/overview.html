@@ -8,12 +8,14 @@
       <script src="../assets/dashboard.js"></script>
       <script src="../controllers/statusUpdate.js"></script>
       <script src="../controllers/employeeDetails.js"></script>
+      <script src="../controllers/dashboardView.js"></script>
    </head>
    
    <body ng-app = "mainApp">
       <header>Employee Dashboard</header>
       <nav>
          <ul>
+            <li><a href = "#dashboard">Dashboard</a></li>
             <li><a href = "#employeeDetails">Employee Details</a></li>
             <li><a href = "#statusUpdate">Status update</a></li>
          </ul>
@@ -21,6 +23,6 @@
          <div ng-view class="main-container">
          	<!-- template -->
          </div>
-      <footer></footer>
+      <footer>Created By: Vinay</footer>
    </body>
 </html>

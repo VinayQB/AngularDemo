@@ -1,5 +1,6 @@
 body.ng-scope {
     margin: 0;
+        font-family: sans-serif;
 }
 header {
     text-align: center;
@@ -11,9 +12,10 @@ header {
     font-weight: bold;
 }
 ul {
+    padding-left: 12px !important;
     list-style: none;
     display: grid;
-    padding: 15px;
+    padding: 0;
 }
 nav ul li a {
     text-decoration: none;
@@ -22,21 +24,27 @@ nav ul li a {
 nav {
     width: 12%;
     float: left;
-    margin-right: 15px;
+    padding-right: 15px;
+        height: 1000px;
+    background-color: #EEEEEE;
 }
 .main-container.ng-scope {
     overflow: auto;
     border-left: 2px solid black;
     padding-left: 15px;
-        height: 628px;
+        height: 1000px;
 
 }
 li {
     margin-bottom: 7px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 2px;
 }
 table, th, td { 
     border: 1px solid #AAA;
     border-collapse: collapse;
+    padding: 5px;
  }
 th {
     cursor: pointer ;
@@ -71,10 +79,17 @@ header{
 }
 .list_data{
         margin-top: 60px;
-      padding-bottom: 80px;
+      padding-bottom: 50px;
+}
+input {
+    margin-left: 5px;
 }
 .add_data{
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0 29px 0;
+    background-color: #EEEEEE;
 }
 #tax{
     padding-right: 16px;
@@ -84,4 +99,59 @@ header{
 }
 #undo{
     margin-left: 10%;
+}
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+#slide-1 h1 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 450px;
+    margin-bottom: 9px !important;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 45px !important;
+    margin-left: 30px !important;
+    line-height: 60px !important;
+    vertical-align: middle !important;
+}
+#slide-1 h2 {
+    width: 510px !important;
+    margin-top: 0 !important;
+    text-align: center !important;
+    padding: 5px !important;
+    margin-left: 30px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 260px !important;
+}
+#slide-1 button {
+    margin-left: 30px !important;
+    text-transform: uppercase;
+    margin-top: 8px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 160px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px !important;
+    background-color: #00A5B6;
+    float: left;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    vertical-align: middle !important;
+    outline: none;
 }

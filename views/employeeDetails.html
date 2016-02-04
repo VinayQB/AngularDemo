@@ -32,15 +32,15 @@
         <form ng-submit="Add()">
             <div class="field">
                 <label for="state">Name: </label>
-                <input id="state" type="text" placeholder="State" maxlength="2" ng-model="newState" required>
+                <input id="state" type="text" placeholder="Enter Name" maxlength="" ng-model="newState" required>
             </div>
             <div class="field">
                 <label id="price" for="price">Salary: </label>
-                <input  type="number" placeholder="Price" min="0" ng-model="newPrice">
+                <input  type="number" placeholder="Price" ng-model="newPrice">
             </div>
             <div class="field">
                 <label id="tax" id="tax" for="tax">Tax: </label>
-                <input  type="number" placeholder="Tax" min="0" ng-model="newTax">
+                <input  type="number" placeholder="Tax" ng-model="newTax">
             </div>
             <div class="action">
                 <button type="submit">Add</button>
