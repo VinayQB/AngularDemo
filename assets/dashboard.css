@@ -20,9 +20,10 @@ ul {
 nav ul li a {
     text-decoration: none;
     color: #1996CA;
+    font-weight: bold;
 }
 nav {
-    width: 12%;
+    width: 132px;
     float: left;
     padding-right: 15px;
         height: 1000px;
@@ -99,6 +100,8 @@ input {
 }
 #undo{
     margin-left: 10%;
+    width: 90px;
+    margin-top: 10px;
 }
 footer {
     background-color: black;
@@ -108,50 +111,19 @@ footer {
     padding: 15px;
     bottom: 0;
 }
-
-
-
-
-
-
-
-#slide-1 h1 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    width: 450px;
-    margin-bottom: 9px !important;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 45px !important;
-    margin-left: 30px !important;
-    line-height: 60px !important;
-    vertical-align: middle !important;
-}
-#slide-1 h2 {
-    width: 510px !important;
-    margin-top: 0 !important;
-    text-align: center !important;
-    padding: 5px !important;
-    margin-left: 30px !important;
-    background-color: rgba(0, 0, 0, 0.5);
-    min-width: 260px !important;
-}
-#slide-1 button {
-    margin-left: 30px !important;
-    text-transform: uppercase;
-    margin-top: 8px;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    width: 160px;
-    text-align: center;
-    line-height: 36px;
-    font-size: 20px !important;
-    background-color: #00A5B6;
-    float: left;
+button {
+    background: #06a3e4;
+    border: none;
     cursor: pointer;
-    border: 2px solid white;
+    padding: 5px;
     color: white;
-    font-weight: bold;
-    vertical-align: middle !important;
+    width: 65px;
+    border-radius: 3px;
     outline: none;
+}
+.action {
+    margin-top: 12px;
+}
+.action button {
+    margin-right: 10px;
 }

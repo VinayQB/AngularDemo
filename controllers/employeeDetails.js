@@ -6,8 +6,8 @@ mainApp.controller('employeeDetailsController', function($scope) {
 
         // Default data (can be loaded from a database)
 		$scope.records = [
-			{ name: 'vinay', salary: 3000, tax: 195, include: false },
-			{ name: 'lawry', salary: 1050, tax: 108, include: false }
+			{ name: 'vinay', salary: 20000, tax: 195, include: false },
+			{ name: 'lawry', salary: 21000, tax: 108, include: false }
 		];
 
         // Total prices
