@@ -1,4 +1,4 @@
-<section ng-controller="employeeDetailsController">
+<section >
 	<h2> Employee Details</h2>
 	{{message}}
 	<div class="list_data">
@@ -10,7 +10,7 @@
                 <th ng-click="type = 'tax'; reverse = !reverse">Tax</th>
                 <th>Action</th>
             </tr>
-            <tr ng-repeat="record in records | orderBy:type:reverse">
+            <tr ng-repeat="record in $root.records | orderBy:type:reverse">
                 <td><input type="checkbox" ng-model="record.include"></td>
                 <td>{{record.name | uppercase}}</td>
                 <td>{{record.salary | currency}}</td>
@@ -26,8 +26,11 @@
         </table>
         <button id="undo" ng-show="history.length > 0" ng-click="Undo()">Undo Delete</button>
     </div>
+
+     <a ui-sref=".list">Show List</a>
+     <div ui-view></div>
   
-    <div class="add_data">
+<!--     <div class="add_data">
         <h1>Add Data</h1>
         <form ng-submit="Add()">
             <div class="field">
@@ -47,5 +50,5 @@
                 <button ng-click="Reset()">Reset</button>
             </div>
         </form>
-    </div>	
+    </div>	 -->
 </section>

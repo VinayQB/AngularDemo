@@ -1,11 +1,11 @@
-mainApp.controller('employeeDetailsController', function($scope) {
+mainApp.controller('employeeDetailsController', function($scope, $timeout, $rootScope) {
    $scope.message = "This page will be used to display employee details";
 
    // Historical data
         $scope.history = [];
 
         // Default data (can be loaded from a database)
-		$scope.records = [
+		$rootScope.records = [
 			{ name: 'vinay', salary: 20000, tax: 195, include: false },
 			{ name: 'lawry', salary: 21000, tax: 108, include: false }
 		];
@@ -16,7 +16,7 @@ mainApp.controller('employeeDetailsController', function($scope) {
             var taxTotal = 0;
 
             // Loop through main records and calculate aggregate prices and taxes if include is true
-			angular.forEach($scope.records, function (record) {
+			angular.forEach($rootScope.records, function (record) {
 		        if (record.include) {
 					priceTotal += record.salary;
 		            taxTotal += record.tax;
@@ -33,10 +33,10 @@ mainApp.controller('employeeDetailsController', function($scope) {
             if ($scope.history.length === 10)
                 $scope.history.shift();
             // Add deleted record to historical records
-            $scope.history.push($scope.records[index]);
+            $scope.history.push($rootScope.records[index]);
 
             // Remove from main records (using index)
-            $scope.records.splice(index, 1);
+            $rootScope.records.splice(index, 1);
         };
 
         // Reset new data model
@@ -53,13 +53,14 @@ mainApp.controller('employeeDetailsController', function($scope) {
             if (!$scope.newState)
                 return;
 
-            // Add to main records
-            $scope.records.push({
-                name: $scope.newState,
-                salary: $scope.newPrice,
-                tax: $scope.newTax,
-                include: false
-            });
+                // Add to main records
+                $rootScope.records.push({
+                    name: $scope.newState,
+                    salary: $scope.newPrice,
+                    tax: $scope.newTax,
+                    include: false
+                });
+                console.log($rootScope.records)
 
             // See $Scope.Reset...
             $scope.Reset();
@@ -68,7 +69,7 @@ mainApp.controller('employeeDetailsController', function($scope) {
         // Undo action (delete)
         $scope.Undo = function () {
             // Add last / most recent historical record to the main records
-            $scope.records.push($scope.history[ $scope.history.length - 1 ]);
+            $rootScope.records.push($scope.history[ $scope.history.length - 1 ]);
 
             // Remove last / most recent historical record
             $scope.history.pop();
