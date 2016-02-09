@@ -1,0 +1,129 @@
+body.ng-scope {
+    margin: 0;
+        font-family: sans-serif;
+}
+header {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+ul {
+    padding-left: 12px !important;
+    list-style: none;
+    display: grid;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #1996CA;
+    font-weight: bold;
+}
+nav {
+    width: 132px;
+    float: left;
+    padding-right: 15px;
+        height: 1000px;
+    background-color: #EEEEEE;
+}
+.main-container.ng-scope {
+    overflow: auto;
+    border-left: 2px solid black;
+    padding-left: 15px;
+        height: 1000px;
+
+}
+li {
+    margin-bottom: 7px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 2px;
+}
+table, th, td { 
+    border: 1px solid #AAA;
+    border-collapse: collapse;
+    padding: 5px;
+ }
+th {
+    cursor: pointer ;
+    height: 30px;
+}
+table{
+      width: 80%;
+  text-align: center;
+  margin: auto;
+}
+th:nth-child(1),th:nth-child(5) {  
+  width: 15%;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+tr:nth-child(odd) {
+   background-color:#fff;
+}
+th  {
+    background-color: black;
+    color: white;
+}
+header{
+    background-color: black;
+  color: white;
+  /* height: 63px; */
+  padding: 15px;
+}
+.list_data h1{
+    text-align: center;
+}
+.list_data{
+        margin-top: 60px;
+      padding-bottom: 50px;
+}
+input {
+    margin-left: 5px;
+}
+.add_data{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0 29px 0;
+    background-color: #EEEEEE;
+}
+#tax{
+    padding-right: 16px;
+}
+.field{
+    padding: 5px;
+}
+#undo{
+    margin-left: 10%;
+    width: 90px;
+    margin-top: 10px;
+}
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    bottom: 0;
+}
+button {
+    background: #06a3e4;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    width: 65px;
+    border-radius: 3px;
+    outline: none;
+}
+.action {
+    margin-top: 12px;
+}
+.action button {
+    margin-right: 10px;
+}
