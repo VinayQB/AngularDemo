@@ -1,5 +1,5 @@
   
-    <div class="add_data">
+    <div ng-hide="tab" class="add_data">
         <h1>Add Data</h1>
         <form ng-submit="Add()">
             <div class="field">
@@ -17,6 +17,7 @@
             <div class="action">
                 <button type="submit">Add</button>
                 <button ng-click="Reset()">Reset</button>
+                <button ng-click="cancel()">Cancel</button>
             </div>
         </form>
     </div>	

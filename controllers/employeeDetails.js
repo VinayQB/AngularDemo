@@ -1,14 +1,20 @@
-mainApp.controller('employeeDetailsController', function($scope, $timeout, $rootScope) {
+mainApp.controller('employeeDetailsController', function($scope, $timeout, $rootScope, $http) {
    $scope.message = "This page will be used to display employee details";
 
    // Historical data
         $scope.history = [];
 
         // Default data (can be loaded from a database)
-		$rootScope.records = [
-			{ name: 'vinay', salary: 20000, tax: 195, include: false },
-			{ name: 'lawry', salary: 21000, tax: 108, include: false }
-		];
+		// $rootScope.records = [
+		// 	{ name: 'vinay', salary: 20000, tax: 195, include: false },
+		// 	{ name: 'lawry', salary: 21000, tax: 108, include: false }
+		// ];
+
+
+        $http.get('partials/dashboard.json').success(function(data){
+            $rootScope.records = data;
+        });
+
 
         // Total prices
 		$scope.Totals = function () {
@@ -74,6 +80,14 @@ mainApp.controller('employeeDetailsController', function($scope, $timeout, $root
             // Remove last / most recent historical record
             $scope.history.pop();
         }
-
+        $scope.cancel = function () {
+            $scope.tab=true;
+            $scope.newState = '';
+            $scope.newPrice = 0;
+            $scope.newTax = 0;
+        }
+        $scope.showList = function () {
+            $scope.tab=false;
+        }
    
 });

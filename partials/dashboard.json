@@ -1,0 +1,17 @@
+[
+
+	{ 
+		"name": "vinay",
+		"salary": 20000,
+		"tax": 195,
+		"include": false 
+	},
+			
+	{ 
+		"name": "lawry",
+		"salary": 21000,
+		"tax": 108, 
+		"include": false
+	 }
+
+]

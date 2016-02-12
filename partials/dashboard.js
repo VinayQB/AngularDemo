@@ -52,6 +52,11 @@
             templateUrl: "views/dashboardView.html",
             controller: 'dashboardController'
         })
+        .state('login', {
+            url: "/login",
+            templateUrl: "views/login.html",
+            controller: 'loginController'
+        })
     })
 
 

@@ -21,6 +21,7 @@ nav ul li a {
     text-decoration: none;
     color: #1996CA;
     font-weight: bold;
+    padding: 5px 0px 6px 1px;
 }
 nav {
     width: 132px;
@@ -79,7 +80,7 @@ header{
     text-align: center;
 }
 .list_data{
-        margin-top: 60px;
+        margin-top: 35px;
       padding-bottom: 50px;
 }
 input {
@@ -91,6 +92,21 @@ input {
     margin: 0 auto;
     padding: 10px 0 29px 0;
     background-color: #EEEEEE;
+}
+.add-employee {
+    margin-top: 40px;
+    margin-left: 114px;
+}
+.add-employee a {
+    border: 2px solid;
+    text-decoration: blink;
+    color: black;
+    background-image: url("../images/Add-icon.png");
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 3px 5px;
+    padding: 5px 8px 5px 24px;
 }
 #tax{
     padding-right: 16px;

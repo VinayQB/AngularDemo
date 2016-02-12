@@ -1,6 +1,9 @@
 <section >
 	<h2> Employee Details</h2>
 	{{message}}
+    <div class="add-employee">
+        <a  ui-sref=".list" ng-click="showList()">Add</a>
+    </div>
 	<div class="list_data">
         <table>
             <tr>
@@ -27,7 +30,7 @@
         <button id="undo" ng-show="history.length > 0" ng-click="Undo()">Undo Delete</button>
     </div>
 
-     <a ui-sref=".list">Show List</a>
+
      <div ui-view></div>
   
 <!--     <div class="add_data">
