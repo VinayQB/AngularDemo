@@ -1,48 +1,91 @@
 [
 {
 "id":"1",
-"topic":"AngularJS basics",
-"who":"ABC",
+"topic":"Introduction to iCloud, TouchId and iBeacon",
+"who":"Aparna",
 "date":"17-02-2016",
 "startTime":"10.00AM",
 "endTime":"11.30AM",
-"where":"TP-main",
+"where":"Leela - Symfony",
 "seats":20,
-"description":"ABCafafasf",
+"description":"Introduction to iCloud, TouchId and iBeacon combined session by Aparna Ashok and Vineeth Madathil",
 "invitation":[{
-"name":"eaeaffzaed",
-"email":"sdgsdg@wdiqjd",
+"name":"jinsy",
+"email":"jinsy@qburst.com",
 "status":"Accepted"
 },
 {
-"name":"eaeaffzaed",
-"email":"sdgsdg@wdiqjd",
+"name":"reshma",
+"email":"reshma@qburst.com",
+"status":"Not decided"
+},
+{
+"name":"ashwin",
+"email":"ashwin@qburst.com",
+"status":"Not decided"
+},{
+"name":"jinsy",
+"email":"jinsy@qburst.com",
+"status":"Accepted"
+},
+{
+"name":"reshma",
+"email":"reshma@qburst.com",
+"status":"Not decided"
+},
+{
+"name":"ashwin",
+"email":"ashwin@qburst.com",
 "status":"Not decided"
 }
 ],
-"trainingDocuments":"sdafsaf",
-"trainingStatus":"afafas",
-"medium":"afafas"
+"trainingDocuments":"",
+"trainingStatus":"Upcoming",
+"medium":"Face to Face"
 },
 {
 "id":"2",
-"topic":"AngularJS",
-"who":"AasfasBC",
-"date":"11-02-2016",
+"topic":"CPU and Memory Utilization (Multi Core, Profiling Tools) [INTERNAL]",
+"who":"Nazif  Naz",
+"date":"19-02-2016",
 "startTime":"12.00AM",
 "endTime":"1.30PM",
 "where":"TP-Ganga",
 "seats":20,
-"description":"ABCafafasf",
+"description":"CPU and Memory Utilization (Multi Core, Profiling Tools) [INTERNAL]",
 "invitation":[{
-"name":"eaeaffzaed",
-"email":"sdgsdg@wdiqjd",
+"name":"jinsy",
+"email":"jinsy@qburst.com",
 "status":"Accepted"
+},
+{
+"name":"reshma",
+"email":"reshma@qburst.com",
+"status":"Not decided"
+},
+{
+"name":"ashwin",
+"email":"ashwin@qburst.com",
+"status":"Not decided"
+},{
+"name":"jinsy",
+"email":"jinsy@qburst.com",
+"status":"Accepted"
+},
+{
+"name":"reshma",
+"email":"reshma@qburst.com",
+"status":"Not decided"
+},
+{
+"name":"ashwin",
+"email":"ashwin@qburst.com",
+"status":"Not decided"
 }
 ],
-"trainingDocuments":"sdafsaf",
-"trainingStatus":"afafas",
-"medium":"afafas"
+"trainingDocuments":"",
+"trainingStatus":"Upcoming",
+"medium":"Face to Face"
 }
 ]
 
