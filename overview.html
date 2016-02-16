@@ -7,9 +7,11 @@
       <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
       <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
       <script src="partials/dashboard.js"></script>
-      <script src="controllers/statusUpdate.js"></script>
+      <script src="controllers/statusController.js"></script>
       <script src="controllers/employeeDetails.js"></script>
       <script src="controllers/dashboardView.js"></script>
+      <script src="services/dataService.js"></script>
+      <script src="services/statusService.js"></script>
    </head>
    
    <body ng-app = "mainApp">
@@ -18,7 +20,9 @@
          <ul>
             <li><a ui-sref = "dashboard">Dashboard</a></li>
             <li><a ui-sref = "employeeDetails">Employee Details</a></li>
-            <li><a ui-sref = "statusUpdate">Status update</a></li>
+            <!-- <li><a ui-sref = "statusUpdate">Status update</a></li> -->
+            <li><a ui-sref = "home">Status update</a></li>
+            <!-- <li><a ui-sref = "statusUpdate">Status update</a></li> -->
          </ul>
       </nav>
        <!--   <div><a href="#addEmployee" title="">Add</a></div> -->

@@ -1,29 +1,3 @@
-// var mainApp = angular.module("mainApp", ['ngRoute']);
-// mainApp.config(['$routeProvider', function($routeProvider) {
-//    $routeProvider.
-   
-//    when('/dashboard', {
-//       templateUrl: 'views/dashboardView.html',
-//       controller: 'dashboardController'
-//    }).
-//    when('/employeeDetails', {
-//       templateUrl: 'views/employeeDetails.html',
-//       controller: 'employeeDetailsController'
-//    }).
-   
-//    when('/statusUpdate', {
-//       templateUrl: 'views/statusUpdate.html',
-//       controller: 'statusUpdateController'
-//    }).
-//    when('/addEmployee', {
-//       templateUrl: 'views/addEmployee.html',
-//       controller: 'addEmployeeController'
-//    }).
-//    otherwise({
-//       redirectTo: '/dashboard'
-//    });
-// }]);
-
  var mainApp = angular.module('mainApp', ['ui.router'])
     mainApp.config(function($stateProvider, $urlRouterProvider){
       
@@ -52,12 +26,24 @@
             templateUrl: "views/dashboardView.html",
             controller: 'dashboardController'
         })
-        .state('login', {
-            url: "/login",
-            templateUrl: "views/login.html",
-            controller: 'loginController'
-        })
-    })
+        .state('home', {
+        url : '/home',
+        views : {
+            '' : {
+                templateUrl : 'views/home.html'
+            },
+            'status@home' : {
+                templateUrl : 'views/status.html',
+                controller : 'statusController'
+            },
+            'history@home' : {
+                templateUrl : 'views/history.html',
+                controller : 'statusController'
+            }
+        }
+
+    });
+})
 
 
             
