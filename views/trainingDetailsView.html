@@ -1,0 +1,40 @@
+<style>
+.training_details {
+	border: 1px solid #DDDDDD;
+	padding: 1%;
+	background-color:#eff4f8;
+	font-size: 12px;
+    margin-right: 1%;
+}
+.training_topic{
+font-weight:bold;
+color:#5598D7;
+padding: 1%;
+}
+.training_invitation{
+background-color: #eff4f8;
+margin-right: 1%;
+}
+.trainings{
+margin-right: 1%;
+}
+</style>
+<div ng-controller="trainingDetailsController">
+
+<div class="training_topic ">{{training.topic}}</div>
+<div class="trainings">
+<div class="training_details col-md-12">
+<div class="training_who col-md-12">Who: {{training.who}}</div>
+<div class="training_date col-md-3">When: {{training.date}} {{training.startTime}} - {{training.endTime}}</div>
+<div class="training_where col-md-3">Where: {{training.where}}</div>
+<div class="training_medium col-md-3">Medium: {{training.medium}}</div>
+<div class="training_seats col-md-3">Remaining Seats: {{training.seats}}</div>
+<div class="training_description col-md-12">Description: {{training.description}}</div>
+</div>
+<br><br>
+<div class="training_invitation " ng-repeat="invitation in training.invitation">
+{{invitation.name}}
+{{invitation.status}}
+</div>
+</div>
+</div>

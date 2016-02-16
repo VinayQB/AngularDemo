@@ -47,6 +47,11 @@
             url: "/trainings",
             templateUrl: "views/trainingList.html",
             controller: 'trainingDetailsController'
+        })
+.state('trainingDetails', {
+            url: "/trainingDetails/:index",
+            templateUrl: "views/trainingDetailsView.html",
+           controller:'trainingDetailsController'
         });
 })
 

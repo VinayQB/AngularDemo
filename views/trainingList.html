@@ -2,22 +2,27 @@
 <style>
 .training_list {
 	border: 1px solid #DDDDDD;
-	padding: 3%;
+	padding: 1%;
 	background-color: white;
 	font-size: 12px;
 	z-index: -1;
+}
+.training_topic{
+color:#5598D7;
+padding: 1%;
 }
 </style>
 <div ng-controller="trainingDetailsController">
 	<h2>Trainings List</h2>
 <div ng-repeat="training in training_list">
 <div class="training_list">
-<div class="training_topic"><a ui-sref = "/trainingDetails">{{training.Topic}}</a></div>
-<div class="training_date">{{training.Date}} {{training.StartTime}} - {{training.EndTime}}</div>
-<div class="training_who">{{training.Who}}</div>
-<div class="training_where">{{training.Where}}</div>
-<div class="training_seats">{{training.Seats}}</div>
-<div class="training_status">{{training.Status}}</div>
+<div class="training_topic"><a ui-sref = "trainingDetails({ index: training.id})">{{training.topic}}</a></div>
+
+<div class="training_who">Who: {{training.who}}</div>
+<div class="training_date">When: {{training.date}} {{training.startTime}} - {{training.endTime}}</div>
+<div class="training_where">Where: {{training.where}}</div>
+<div class="training_seats">Seats remaining: {{training.seats}}</div>
+<div class="training_status">Training status: {{training.status}}</div>
 
 </div>
 </div>
