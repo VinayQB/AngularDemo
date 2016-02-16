@@ -68,6 +68,12 @@ mainApp.factory('dataService', [
 					}
 					return dates;
 				},
+				getTrainingList : function() {
+					return $http.get('partials/training_details.json').then(
+							function(response) {
+								return response.data;
+							});
+				},
 				getTrainingDetails : function() {
 					return $http.get('partials/training_details.json').then(
 							function(response) {
