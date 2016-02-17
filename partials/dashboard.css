@@ -280,3 +280,24 @@ textarea {
     font-size: 14px;
 }
 */
+div#trainingDetails-wrap {
+    margin-top: 50px !important;
+    width: 85%;
+    /* margin-left: 15px; */
+    margin: auto;
+    padding: 20px;
+    background: #F3F3F3;
+    border: 1px solid;
+}
+div#trainingDetails-wrap div {
+    padding: 10px;
+}
+div#trainingDetails-wrap label {
+    padding-right: 20px;
+}
+select{
+    outline: none;
+}
+input{
+    outline: none;
+}

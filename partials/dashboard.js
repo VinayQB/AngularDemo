@@ -21,6 +21,11 @@
             templateUrl: "views/statusUpdate.html",
             controller: 'statusUpdateController'
         })
+        .state('trainingList', {
+            url: "/trainingList",
+            templateUrl: "views/createTraining.html",
+            controller: 'createTrainingController'
+        })
         .state('dashboard', {
             url: "/dashboard",
             templateUrl: "views/dashboardView.html",
@@ -29,19 +34,18 @@
         .state('home', {
         url : '/home',
         views : {
-            '' : {
-                templateUrl : 'views/home.html'
-            },
-            'status@home' : {
-                templateUrl : 'views/status.html',
-                controller : 'statusController'
-            },
-            'history@home' : {
-                templateUrl : 'views/history.html',
-                controller : 'statusController'
+                '' : {
+                    templateUrl : 'views/home.html'
+                },
+                'status@home' : {
+                    templateUrl : 'views/status.html',
+                    controller : 'statusController'
+                },
+                'history@home' : {
+                    templateUrl : 'views/history.html',
+                    controller : 'statusController'
+                }
             }
-        }
-
     })
     .state('trainings', {
             url: "/trainings",
