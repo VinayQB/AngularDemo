@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+   
+   <head>
+      <title>Angular JS Views</title>
+      <link rel="stylesheet" href="partials/dashboard.css">
+<link rel="stylesheet"
+	href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+
+      <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+      <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+      <script src="partials/dashboard.js"></script>
+      <script src="controllers/statusController.js"></script>
+      <script src="controllers/employeeDetails.js"></script>
+      <script src="controllers/createTrainingController.js"></script>
+      <script src="controllers/dashboardView.js"></script>
+      <script src="services/dataService.js"></script>
+      <script src="services/statusService.js"></script>
+      <script src="controllers/trainingDetailsController.js"></script>
+   </head>
+   
+   <body ng-app = "mainApp">
+      <header>Space Dashboard</header>
+      <nav>
+         <ul>
+            <li><a ui-sref = "dashboard">Dashboard</a></li>
+            <li><a ui-sref = "employeeDetails">Employee Details</a></li>
+            <!-- <li><a ui-sref = "statusUpdate">Status update</a></li> -->
+            <li><a ui-sref = "home">Status update</a></li>
+            <li><a ui-sref = "trainingList">Training List</a></li>
+            <!-- <li><a ui-sref = "statusUpdate">Status update</a></li> -->
+<li><a ui-sref = "trainings">Trainings</a></li>
+         </ul>
+      </nav>
+       <!--   <div><a href="#addEmployee" title="">Add</a></div> -->
+         <div ui-view class="main-container">
+         	<!-- template -->
+         </div>
+     
+      <footer>Created By: Vinay</footer>
+   </body>
+</html>
