@@ -1,0 +1,21 @@
+{
+"Trainings":[{
+				"Training_id":"1",
+				"Topic":"AngularJS basics",
+				"Who":"ABC",
+				"Date":"17-02-2016",
+				"StartTime":"10.00AM",
+				"EndTime":"11.30AM",
+				"Where":"TP-main",
+				"Seats":20,
+				"Description":"ABCafafasf",
+				"Invitation":
+					[{
+							"name":"eaeaffzaed",
+							"email":"sdgsdg@wdiqjd",
+							"status":"Accepted"
+					}],
+				"TrainingDocuments":"sdafsaf",
+				"TrainingStatus":"afafas"
+			}]
+}
